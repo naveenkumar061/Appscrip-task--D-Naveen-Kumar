@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-top {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: black;
+  color: rgb(175, 0, 0);
+  padding: 2px;
+  gap: 10rem;
+  font-family: "Roboto", serif;
+}
+.htfirst,
+.htsecond,
+.htthird {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.header-middle {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 15px;
+}
+.hmtop {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  text-transform: uppercase;
+  font-family: "Roboto", serif;
+}
+.hmtlicon {
+  display: none;
+}
+.hmtright {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.hmtrlast {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hmbottom {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding: 2px;
+  text-transform: uppercase;
+  font-family: "Roboto", serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.hmbhome {
+  display: none;
+}
+.header-bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", serif;
+  gap: 5px;
+  padding: 2px;
+}
+.header-bottom h1 {
+  font-weight: 300;
+  text-transform: uppercase;
+  padding-bottom: 4px;
+  width: 100%;
+  text-align: center;
+}
+.header-bottom p {
+  width: 24.25%;
+  font-size: 10px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.75);
+}
+@media screen and (max-width: 768px) {
+  .htfirst,
+  .htthird {
+    display: none;
+  }
+  .htsecond {
+    gap: 10px;
+  }
+  .hmtop {
+    justify-content: space-between;
+  }
+  .hmtleft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+  }
+  .hmtleft img {
+    height: 25px;
+  }
+  .hmtlicon {
+    display: block;
+    font-size: 36px;
+  }
+  .header-middle h2 {
+    font-size: 32px;
+  }
+  .hmtrperson,
+  .hmtrlast {
+    display: none;
+  }
+  .hmtrsame {
+    font-size: 36px;
+  }
+  .hmbottom {
+    justify-content: flex-start;
+    gap: 0;
+    font-weight: 500;
+    padding: 10px;
+  }
+  .hmbhome {
+    display: block;
+    opacity: 0.25;
+    padding-right: 5px;
+    border-right: 2px solid grey;
+  }
+  .hmbshop {
+    padding-left: 5px;
+  }
+  .hmbsame {
+    display: none;
+  }
+  .header-bottom h1 {
+    font-weight: 400;
+    padding: 0px 54.5px 15px;
+    font-size: 23.5px;
+  }
+  .header-bottom p {
+    width: 95%;
+    font-size: 15px;
+    text-align: center;
+  }
+}
