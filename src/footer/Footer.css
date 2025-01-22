@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+.footer {
+  background-color: black;
+  color: white;
+  font-family: "Roboto", serif;
+  padding: 20px;
+}
+.footer h3 {
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+.footer p {
+  color: gray;
+  padding-bottom: 5px;
+}
+.footer img {
+  width: 20px;
+  height: 20px;
+}
+.footer-top {
+  border-bottom: 2px solid gray;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-bottom {
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.ftleft {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.ftldown {
+  display: flex;
+  gap: 10px;
+}
+.ftldown input {
+  padding: 10px;
+  width: 300px;
+}
+.ftldown button {
+  padding: 10px;
+  background-color: black;
+  color: gray;
+  border: 1px solid gray;
+  text-transform: uppercase;
+}
+.ftright {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.currency {
+  display: flex;
+  align-items: center;
+  font-size: bold;
+}
+.copyright {
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
