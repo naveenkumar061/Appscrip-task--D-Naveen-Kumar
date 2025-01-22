@@ -1,4 +1,5 @@
 import Products from "../content/products/Products";
+import Footer from "../footer/Footer";
 import Header from "../header/Header";
 import "./App.css";
 
@@ -7,6 +8,7 @@ function App() {
     <div>
       <Header />
       <Products />
+      <Footer />
     </div>
   );
 }
